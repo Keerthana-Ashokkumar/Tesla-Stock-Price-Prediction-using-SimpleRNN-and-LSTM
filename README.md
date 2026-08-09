@@ -1,22 +1,22 @@
-Tesla Stock Price Prediction Using SimpleRNN and LSTM
-Project Overview
+## Tesla Stock Price Prediction Using SimpleRNN and LSTM
+## Project Overview
 This project focuses on predicting Tesla's future closing stock prices using deep learning models. The solution compares SimpleRNN and LSTM models for 1-day, 5-day and 10-day ahead forecasting, evaluates their performance using MSE, RMSE and MAE, and performs LSTM hyperparameter tuning using GridSearchCV.
 
-Domain
+## Domain
 Financial Analytics | Data Science | Deep Learning | Time-Series Forecasting
 
-Problem Statement
+## Problem Statement
 Tesla stock prices are highly dynamic and can be affected by market trends, volatility and external events. The objective is to develop a time-series forecasting system that can predict future Tesla closing prices and compare the performance of SimpleRNN and LSTM architectures.
 
-Business Use Cases
+## Business Use Cases
 Short-Term Stock Price Forecasting Investment Decision Support Risk & Volatility Assessment Portfolio Planning Market Trend Analysis Financial Analyst Decision Support News-Sentiment-Based Market Analysis
 
-Dataset Description
+## Dataset Description
 Dataset: Tesla historical stock-price data (TSLA.csv)
 
 Records: 2,416 Period: June 2010 – February 2020 Features: Date, Open, High, Low, Close, Adj Close, Volume.
 
-Approach
+## Approach
 1️⃣ Data Preprocessing
 
 Missing-value checking Duplicate checking Date conversion and sorting Time-series train/test split MinMax scaling Training-only scaler fitting to avoid data leakage.
@@ -47,17 +47,19 @@ GridSearchCV Units Dropout Learning Rate
 
 VADER sentiment analysis on Tesla news headlines. 5️⃣ Model Evaluation
 
-Evaluation Metrics
+## Evaluation Metrics
 
 MSE RMSE MAE
 
 Lower RMSE/MAE indicates better prediction performance.
 
-6️⃣ Forecasting
+## 6️⃣ Forecasting
 
-The project performs:
+## The project performs:
 
-1-day prediction 5-day prediction 10-day prediction 10-day recursive forward forecasting using the LSTM 1-day model. 7️⃣ Model Comparison
+1-day prediction 5-day prediction 10-day prediction 10-day recursive forward forecasting using the LSTM 1-day model. 
+
+## 7️⃣ Model Comparison
 
 Based on the actual .md evaluation output:
 
@@ -67,7 +69,7 @@ The corresponding RMSE values in the file are approximately:
 
 Horizon LSTM SimpleRNN 1-Day 26.45 27.08 5-Day 42.28 40.67 10-Day 51.10 46.87
 
-8️⃣ Hyperparameter Tuning
+## 8️⃣ Hyperparameter Tuning
 
 GridSearchCV tested:
 
@@ -77,13 +79,13 @@ The best CV configuration recorded in the file is:
 
 64 units + 0.3 dropout + 0.005 learning rate.
 
-9️⃣ NLP — News Sentiment
+## 9️⃣ NLP — News Sentiment
 
 Tesla-related headlines are cleaned and analysed using VADER sentiment analysis. Sentiment scores are then compared with same-day Tesla returns.
 
 This provides a pathway to add news sentiment as an additional model input, rather than relying only on historical prices.
 
-🌐 Application / Business Output
+## 🌐 Application / Business Output
 
 Your Tesla project can be presented as a Financial Decision Support System:
 
@@ -95,7 +97,7 @@ Output →
 
 Predicted stock price Forecast horizon Model performance Risk/trend information Optional sentiment signal
 
-📈 Skills Learned
+## 📈 Skills Learned
 Data Cleaning & Preprocessing Time-Series EDA Feature Engineering Deep Learning SimpleRNN LSTM Model Evaluation Hyperparameter Tuning Recursive Forecasting NLP / Sentiment Analysis End-to-End ML Pipeline 🧰 Technology Stack Category Tools Programming Python Data Handling Pandas, NumPy Visualization Matplotlib, Seaborn Machine Learning Scikit-learn Deep Learning TensorFlow / Keras NLP VADER Model Tuning GridSearchCV / SciKeras Model Saving Keras model files
 
 The actual notebook uses TensorFlow/Keras, Scikit-learn, Pandas, NumPy, Matplotlib and Seaborn.
