@@ -132,8 +132,8 @@ The models are evaluated using:
 - Mean Squared Error (MSE)
 - Root Mean Squared Error (RMSE)
 - Mean Absolute Error (MAE)
-
-Lower RMSE and MAE indicate better prediction performance.
+- R squared (R²)
+Lower RMSE , MSE and MAE but R²"indicate better prediction performance.
 
 ## Hyperparameter Tuning
 
